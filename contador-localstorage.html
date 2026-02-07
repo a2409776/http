@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Contador LocalStorage</title>
+</head>
+<body>
+<script>
+let visits = localStorage.getItem('visits');
+visits = visits ? parseInt(visits) + 1 : 1;
+localStorage.setItem('visits', visits);
+document.write("Has visitat aquesta pàgina " + visits + " vegades amb LocalStorage.");
+</script>
+</body>
+</html>

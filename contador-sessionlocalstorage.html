@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Contador Session + LocalStorage</title>
+</head>
+<body>
+<script>
+sessionStorage.setItem('sessionStart', sessionStorage.getItem('sessionStart') || '1');
+let visits = localStorage.getItem('visits') || '0';
+visits = parseInt(visits) + 1;
+localStorage.setItem('visits', visits);
+document.write("Has visitat aquesta pàgina " + visits + " vegades en aquesta sessió.");
+</script>
+</body>
+</html>
